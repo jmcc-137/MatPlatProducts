@@ -29,8 +29,8 @@
               "/workspaces/ModelPlatProducts/Application/Application.csproj": {
                 "projectPath": "/workspaces/ModelPlatProducts/Application/Application.csproj"
               },
-              "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj": {
-                "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj"
+              "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj": {
+                "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -233,12 +233,12 @@
         }
       }
     },
-    "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj": {
+    "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj",
-        "projectName": "Ingfrastructure",
-        "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj",
+        "projectUniqueName": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj",
         "packagesPath": "/home/vscode/.nuget/packages/",
         "outputPath": "/workspaces/ModelPlatProducts/Ingfrastructure/obj/",
         "projectStyle": "PackageReference",

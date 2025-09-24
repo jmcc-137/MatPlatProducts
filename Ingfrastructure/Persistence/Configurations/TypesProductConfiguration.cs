@@ -13,6 +13,10 @@ namespace Ingfrastructure.Persistence.Configurations
             builder.Property(tp => tp.Description)
                 .IsRequired()
                 .HasMaxLength(80);
+            builder.HasMany(tp => tp.Products)
+                .WithOne(p => p.TypesProduct)
+                .HasForeignKey(p => p.TypeProductId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

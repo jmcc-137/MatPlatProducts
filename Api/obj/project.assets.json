@@ -1131,7 +1131,7 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
-      "Ingfrastructure/1.0.0": {
+      "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
@@ -1141,10 +1141,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "compile": {
-          "bin/placeholder/Ingfrastructure.dll": {}
+          "bin/placeholder/Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Ingfrastructure.dll": {}
+          "bin/placeholder/Infrastructure.dll": {}
         }
       }
     }
@@ -3304,10 +3304,10 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
-    "Ingfrastructure/1.0.0": {
+    "Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Ingfrastructure/Ingfrastructure.csproj",
-      "msbuildProject": "../Ingfrastructure/Ingfrastructure.csproj"
+      "path": "../Ingfrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Ingfrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3316,7 +3316,7 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "FluentValidation.DependencyInjectionExtensions >= 12.0.0",
-      "Ingfrastructure >= 1.0.0",
+      "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.9"
     ]
@@ -3349,8 +3349,8 @@
             "/workspaces/ModelPlatProducts/Application/Application.csproj": {
               "projectPath": "/workspaces/ModelPlatProducts/Application/Application.csproj"
             },
-            "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj": {
-              "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj"
+            "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj": {
+              "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj"
             }
           }
         }

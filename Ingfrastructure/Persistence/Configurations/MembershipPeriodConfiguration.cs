@@ -17,13 +17,16 @@ namespace Ingfrastructure.Persistence.Configurations
                 .IsRequired();
             builder.HasOne(mp => mp.Membership)
                 .WithMany(m => m.MembershipPeriods)
-                .HasForeignKey(mp => mp.MembershipId);
+                .HasForeignKey(mp => mp.MembershipId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(mp => mp.Period)
                 .WithMany(p => p.MembershipPeriods)
-                .HasForeignKey(mp => mp.PeriodId);
+                .HasForeignKey(mp => mp.PeriodId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(mp => mp.Company)
                 .WithMany(c => c.MembershipPeriods)
-                .HasForeignKey(mp => mp.CompanyId);
+                .HasForeignKey(mp => mp.CompanyId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

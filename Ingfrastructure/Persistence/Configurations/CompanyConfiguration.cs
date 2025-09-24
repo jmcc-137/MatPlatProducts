@@ -19,16 +19,20 @@ namespace Ingfrastructure.Persistence.Configurations
                 .HasMaxLength(85);
             builder.HasOne(c => c.Category)
                 .WithMany(ca => ca.Companies)
-                .HasForeignKey(c => c.CategoryId);
+                .HasForeignKey(c => c.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(c => c.TypeIdentification)
                 .WithMany()
-                .HasForeignKey(c => c.TypeId);
+                .HasForeignKey(c => c.TypeId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(c => c.City)
                 .WithMany()
-                .HasForeignKey(c => c.CityId);
+                .HasForeignKey(c => c.CityId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(c => c.Audience)
                 .WithMany(a => a.Companies)
-                .HasForeignKey(c => c.AudienceId);
+                .HasForeignKey(c => c.AudienceId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

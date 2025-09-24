@@ -21,7 +21,8 @@ namespace Ingfrastructure.Persistence.Configurations
                 .HasMaxLength(120);
             builder.HasOne(c => c.Audience)
                 .WithMany(a => a.Customers)
-                .HasForeignKey(c => c.AudienceId);
+                .HasForeignKey(c => c.AudienceId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

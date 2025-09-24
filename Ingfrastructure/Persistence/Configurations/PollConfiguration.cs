@@ -19,7 +19,8 @@ namespace Ingfrastructure.Persistence.Configurations
                 .IsRequired();
             builder.HasOne(p => p.CategoryPoll)
                 .WithMany(cp => cp.Polls)
-                .HasForeignKey(p => p.CategoryPollId);
+                .HasForeignKey(p => p.CategoryPollId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

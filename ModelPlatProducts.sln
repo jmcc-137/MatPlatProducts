@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{B15C217B-AE55-4783-8C6F-4A7CE3CFE787}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingfrastructure", "Ingfrastructure\Ingfrastructure.csproj", "{05872AE2-3D68-4D4A-B0F8-AB452589FD25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Ingfrastructure\Infrastructure.csproj", "{05872AE2-3D68-4D4A-B0F8-AB452589FD25}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{DC3D276B-2392-4099-ABE9-A3B3F47AB447}"
 EndProject

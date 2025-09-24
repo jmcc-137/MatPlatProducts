@@ -1085,9 +1085,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj",
-      "projectName": "Ingfrastructure",
-      "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj",
+      "projectUniqueName": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj",
+      "projectName": "Infrastructure",
+      "projectPath": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj",
       "packagesPath": "/home/vscode/.nuget/packages/",
       "outputPath": "/workspaces/ModelPlatProducts/Ingfrastructure/obj/",
       "projectStyle": "PackageReference",

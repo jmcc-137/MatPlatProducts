@@ -21,7 +21,8 @@ namespace Ingfrastructure.Persistence.Configurations
                 .HasMaxLength(80);
             builder.HasOne(p => p.TypesProduct)
                 .WithMany(tp => tp.Products)
-                .HasForeignKey(p => p.TypeProductId);
+                .HasForeignKey(p => p.TypeProductId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

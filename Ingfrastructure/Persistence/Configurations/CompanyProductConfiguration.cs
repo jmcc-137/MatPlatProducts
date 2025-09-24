@@ -14,13 +14,16 @@ namespace Ingfrastructure.Persistence.Configurations
                 .IsRequired();
             builder.HasOne(cp => cp.Company)
                 .WithMany(c => c.CompanyProducts)
-                .HasForeignKey(cp => cp.CompanyId);
+                .HasForeignKey(cp => cp.CompanyId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(cp => cp.Product)
                 .WithMany(p => p.CompanyProducts)
-                .HasForeignKey(cp => cp.ProductId);
+                .HasForeignKey(cp => cp.ProductId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(cp => cp.UnitOfMeasure)
                 .WithMany(u => u.CompanyProducts)
-                .HasForeignKey(cp => cp.UnitMeasureId);
+                .HasForeignKey(cp => cp.UnitMeasureId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

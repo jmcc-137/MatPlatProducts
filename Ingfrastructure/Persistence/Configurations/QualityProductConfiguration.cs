@@ -16,16 +16,20 @@ namespace Ingfrastructure.Persistence.Configurations
                 .IsRequired();
             builder.HasOne(qp => qp.Product)
                 .WithMany(p => p.QualityProducts)
-                .HasForeignKey(qp => qp.ProductId);
+                .HasForeignKey(qp => qp.ProductId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(qp => qp.Customer)
                 .WithMany(c => c.QualityProducts)
-                .HasForeignKey(qp => qp.CustomerId);
+                .HasForeignKey(qp => qp.CustomerId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(qp => qp.Poll)
                 .WithMany(p => p.QualityProducts)
-                .HasForeignKey(qp => qp.PollId);
+                .HasForeignKey(qp => qp.PollId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(qp => qp.Company)
                 .WithMany()
-                .HasForeignKey(qp => qp.CompanyId);
+                .HasForeignKey(qp => qp.CompanyId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

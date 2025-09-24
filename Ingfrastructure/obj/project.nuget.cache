@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gwoluMa17Io=",
+  "dgSpecHash": "8karhGeDPC4=",
   "success": true,
-  "projectFilePath": "/workspaces/ModelPlatProducts/Ingfrastructure/Ingfrastructure.csproj",
+  "projectFilePath": "/workspaces/ModelPlatProducts/Ingfrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/vscode/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/vscode/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",

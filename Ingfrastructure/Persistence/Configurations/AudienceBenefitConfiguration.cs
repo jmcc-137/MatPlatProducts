@@ -12,10 +12,12 @@ namespace Ingfrastructure.Persistence.Configurations
             builder.HasKey(ab => new { ab.AudienceId, ab.BenefitId });
             builder.HasOne(ab => ab.Audience)
                 .WithMany(a => a.AudienceBenefits)
-                .HasForeignKey(ab => ab.AudienceId);
+                .HasForeignKey(ab => ab.AudienceId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(ab => ab.Benefit)
                 .WithMany(b => b.AudienceBenefits)
-                .HasForeignKey(ab => ab.BenefitId);
+                .HasForeignKey(ab => ab.BenefitId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

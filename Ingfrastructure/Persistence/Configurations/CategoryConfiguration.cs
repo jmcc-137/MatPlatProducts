@@ -14,7 +14,8 @@ namespace Ingfrastructure.Persistence.Configurations
                 .IsRequired();
             builder.HasMany(c => c.Companies)
                 .WithOne(c => c.Category)
-                .HasForeignKey(c => c.CategoryId);
+                .HasForeignKey(c => c.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

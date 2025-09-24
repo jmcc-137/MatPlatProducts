@@ -12,10 +12,12 @@ namespace Ingfrastructure.Persistence.Configurations
             builder.HasKey(df => df.Id);
             builder.HasOne(df => df.Favorite)
                 .WithMany(f => f.DetailFavorites)
-                .HasForeignKey(df => df.FavoriteId);
+                .HasForeignKey(df => df.FavoriteId)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(df => df.Product)
                 .WithMany(p => p.DetailFavorites)
-                .HasForeignKey(df => df.ProductId);
+                .HasForeignKey(df => df.ProductId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
